@@ -1,9 +1,5 @@
 from PIL import Image
 import numpy as np
-import shutil
-import os
-from tkinter import ttk
-import tkinter as tk
 
 
 class Face:
@@ -81,14 +77,6 @@ def generate(in_file, out_file, offset, gain, COLOR_SELECT, level, lvl, bare, ba
     stl_txt.append('solid 1')
 
     solid = Cube()
-
-    # bare = ttk.Progressbar(gui,
-    #                        orient=tk.HORIZONTAL,
-    #                        length=300,)
-    # bare_label = tk.Label(gui,
-    #                       text="Calcul 0%")
-    # bare.grid(row=6, column=0, columnspan=2, pady=10)
-    # bare_label.grid(row=7, column=0, columnspan=2)
 
     for i in range(0, h-1):
         for j in range(0, w-1):

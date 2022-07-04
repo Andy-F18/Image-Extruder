@@ -1,6 +1,4 @@
 from PIL import Image
-import shutil
-import os
 
 
 class Face:
@@ -50,7 +48,7 @@ def open_file_W(file, content, bare, bare_label):
             f.write("\n" + i)
             s += 1
             l = int(100 * s / t)
-            if (l != n):
+            if l != n:
                 n = l
                 bare['value'] = n
                 bare_label.configure(text="Saving : " + str(n) + "%")
